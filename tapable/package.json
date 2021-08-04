@@ -1,0 +1,7 @@
+{
+    "name": "tapable-learn",
+    "version": "0.0.1",
+    "dependencies": {
+        "tapable": "^2.2.0"
+    }
+}
