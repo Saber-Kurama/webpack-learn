@@ -3,10 +3,23 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: 'development',
-  entry: "./src/index.js",
+  // entry: "./src/index.js",
+  entry: {
+    // index: {
+    //   import: './src/index.js',
+    //   dependOn: 'shared',
+    // },
+    // another: {
+    //   import: './src/another-module.js',
+    //   dependOn: 'shared',
+    // },
+    // shared: 'lodash',
+    index: './src/index.js',
+  },
   output: {
     // filename: 'main.js',
-    filename: "bundle.js",
+    // filename: "bundle.js",
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, "dist"),
     clean: true,
     // assetModuleFilename: 'images/[hash][ext][query]'
@@ -65,4 +78,17 @@ module.exports = {
       title: "管理输出",
     }),
   ],
+  optimization: {
+    runtimeChunk: 'single',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
+  },
+  
 };
