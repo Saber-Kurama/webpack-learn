@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "logName": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

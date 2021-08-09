@@ -5,6 +5,8 @@ https://mp.weixin.qq.com/s/iomDg1Qg_1kKEkeo9EzbGQ
 [从零使用 Webpack5 搭建一个完整的 Vue3 的开发环境](https://juejin.cn/post/6924180659829211143#heading-12)
 [基于 vue3 + webpack 5 + sass+ vw 适配方案+axios 封装，从0构建手机端模板脚手架](https://juejin.cn/post/6989973871663251487#heading-18)
 [Webpack5 从零配置一个基础的 Vue 项目](https://juejin.cn/post/6978832288586924046#heading-38)
+[手写系列-实现一个铂金段位的 React](https://juejin.cn/post/6978654109893132318)
+[前端工程化实战 - 自定义 React 脚手架 & CLI 升级](https://juejin.cn/post/6989028324202938398#heading-14)
 
 loader 配置优化
 这个其实上面已经做了。明确告诉 loader，哪些文件不用做处理(exclude)，或者只处理哪些文件(include)。
